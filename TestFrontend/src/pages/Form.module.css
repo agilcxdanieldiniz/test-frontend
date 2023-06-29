@@ -1,0 +1,29 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #919191;
+    border-radius: 8px;
+}
+
+.resgisterForm input, h1, label{
+    padding: .5em;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.resgisterForm input {
+    width: 50%;
+}
+
+.btnRegister {
+    border-radius: 16px;
+}
+
+.btnRegister:hover {
+    background-color: #062103;
+    color: #ffffff;
+}
