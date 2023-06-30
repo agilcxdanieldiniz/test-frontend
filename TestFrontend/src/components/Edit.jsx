@@ -128,6 +128,7 @@ export default function Edit() {
             id="activeStatus"
             value={form.activeStatus}
             onChange={(e) => updateForm({ activeStatus: e.target.value })}
+            disabled
           />
         </div>
         <div>
