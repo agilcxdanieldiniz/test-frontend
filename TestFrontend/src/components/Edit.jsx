@@ -8,7 +8,7 @@ export default function Edit() {
     phone: "",
     address: "",
     date: "",
-    activeStatus: "",
+    activeStatus: true,
     records: [],
   });
   const params = useParams();
@@ -128,7 +128,6 @@ export default function Edit() {
             id="activeStatus"
             value={form.activeStatus}
             onChange={(e) => updateForm({ activeStatus: e.target.value })}
-            disabled
           />
         </div>
         <div>
