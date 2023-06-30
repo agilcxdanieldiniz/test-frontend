@@ -6,9 +6,10 @@
     width: 100%;
     background-color: #919191;
     border-radius: 8px;
+    padding: .5rem;
 }
 
-.resgisterForm input, h1, label{
+.resgisterForm input, h1, label, button{
     padding: .5em;
     text-align: center;
     display: block;
@@ -19,11 +20,18 @@
     width: 50%;
 }
 
-.btnRegister {
+.btnRegister, .btnList {
     border-radius: 16px;
+    border: none;
+    text-decoration: none;
+    text-decoration-style: none;
 }
 
-.btnRegister:hover {
+.btnRegister:hover, .btnList:hover {
     background-color: #062103;
     color: #ffffff;
+}
+
+.btnList {
+    margin-top: .5rem;
 }
