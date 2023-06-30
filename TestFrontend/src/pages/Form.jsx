@@ -3,13 +3,15 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 
+const actualDate = new Date().toISOString().substring(0, 10);
+
 const Form = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
     address: "",
-    date: "",
+    date: actualDate,
     activeStatus: true,
   });
 
@@ -93,7 +95,7 @@ const Form = () => {
               type="date"
               name="date"
               id="date"
-              value={new Date().toISOString().substring(0, 10)}
+              value={actualDate}
               onChange={(e) => updateForm({ date: e.target.value })}
               disabled
             />

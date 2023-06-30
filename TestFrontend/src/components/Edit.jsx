@@ -7,6 +7,8 @@ export default function Edit() {
     email: "",
     phone: "",
     address: "",
+    date: "",
+    activeStatus: true,
     records: [],
   });
   const params = useParams();
@@ -53,6 +55,8 @@ export default function Edit() {
       email: form.email,
       phone: form.phone,
       address: form.address,
+      date: form.date,
+      activeStatus: form.activeStatus,
     };
 
     // This will send a post request to update the data in the database.
@@ -106,6 +110,42 @@ export default function Edit() {
             id="address"
             value={form.address}
             onChange={(e) => updateForm({ address: e.target.value })}
+          />
+        </div>
+        <div>
+          <label htmlFor="date">Register date: </label>
+          <input
+            type="date"
+            id="date"
+            value={form.date}
+            disabled
+          />
+        </div>
+        <div>
+          <label htmlFor="activeStatus">Profile status: </label>
+          <input
+            type="text"
+            id="activeStatus"
+            value={form.activeStatus}
+            onChange={(e) => updateForm({ activeStatus: e.target.value })}
+          />
+        </div>
+        <div>
+          <label htmlFor="activeStatus">Activate: </label>
+          <input
+            type="radio"
+            id="activeStatus"
+            name="activeStatus"
+            value={true}
+            onChange={(e) => updateForm({ activeStatus: e.target.value })}
+          />
+          <label htmlFor="activeStatus">Inactivate: </label>
+          <input
+            type="radio"
+            id="activeStatus"
+            name="activeStatus"
+            value={false}
+            onChange={(e) => updateForm({ activeStatus: e.target.value })}
           />
         </div>
         <div className="form-group">
