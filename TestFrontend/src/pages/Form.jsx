@@ -95,6 +95,7 @@ const Form = () => {
               id="date"
               value={new Date().toISOString().substring(0, 10)}
               onChange={(e) => updateForm({ date: e.target.value })}
+              disabled
             />
           </label>
           <input

@@ -6,7 +6,7 @@ const Record = (props) => (
     <td>{props.record._id}</td>
     <td>{props.record.name}</td>
     <td>
-      <Link to={`/edit/${props.record._id}`}>
+      <Link style={{ textDecoration: "none" }} to={`/edit/${props.record._id}`}>
         <button>Edit</button>
       </Link>
       <button
@@ -68,7 +68,7 @@ export default function RecordList() {
   // This following section will display the table with the records of individuals.
   return (
     <div>
-      <Link to={`/`}>
+      <Link style={{ textDecoration: "none" }} to={`/`}>
         <button>Add new entry</button>
       </Link>
 
