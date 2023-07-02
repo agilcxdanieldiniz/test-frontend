@@ -2,7 +2,7 @@
 
 Teste técnico Front-end:
 	Objetivo
-		Desenvolver uma tela de login contendo dados de cadastro de usuário fictício (Dados pessoais, dados endereço e status(data de cadastro, ativo, perfil) e tela para consulta com base no id ou nome. As informações devem ser salvas em um banco NoSQL (mongodb)
+		Desenvolver uma tela de login contendo dados de cadastro de usuário fictício (Dados pessoais, dados endereço e status(data de cadastro, ativo, perfil) e tela para consulta com base no id ou nome. As informações devem ser salvas em um banco NoSQL (mongodb ou etc)
 	
 	Procedimento:
 	Deve-se fazer o clone do projeto e todo desenvolvimento deve ser dentro do repositório (sob pena de não enquadrar na avaliação)
